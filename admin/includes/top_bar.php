@@ -131,5 +131,10 @@
           <i class="fas fa-th-large"></i>
         </a>
       </li>
+      <li>
+        <a class="nav-link"  href="logout.php" role="button">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
     </ul>
   </nav>
