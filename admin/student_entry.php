@@ -80,21 +80,27 @@
               <!-- form start -->
               <form id="quickForm">
                 <div class="card-body">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Student_id</label>
+                    <input type="text" name="student_id" class="form-control" id="exampleInputEmail1" placeholder="Enter studentid">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
                   </div>
-                  <div class="form-group mb-0">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
-                      <label class="custom-control-label" for="exampleCheck1">I agree to the <a href="#">terms of service</a>.</label>
-                    </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="text" name="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
                   </div>
-                </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Phone</label>
+                    <input type="number" name="phone" class="form-control" id="exampleInputEmail1" placeholder="Enter phone number">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputAddress1">Address</label>
+                    <textarea name="address" id="" cols="30" rows="5" class="form-control">Address</textarea>
+                  </div>
+                 
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
