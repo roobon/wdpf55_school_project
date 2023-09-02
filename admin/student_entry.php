@@ -9,21 +9,6 @@
 
 ?>
 
-<?php 
-if(isset($_POST['submit'])){
-  extract($_POST);
-  require_once("includes/db_config.php");
-
-  echo "INSERT INTO student VALUES (NUll, '$student_id', '$name', '$email', '$phone', '$address' ";
-  $sql = "INSERT INTO student VALUES (NUll, '$student_id', '$name', '$email', '$phone', '$address' ";
-  $db->query($sql);
-
-  if($db->affected_rows){
-    echo "Inserted";
-  }
-}
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -90,10 +75,24 @@ if(isset($_POST['submit'])){
             <div class="card card-primary">
               <div class="card-header">
                 <h3 class="card-title">New Student</h3>
+                <?php 
+if(isset($_POST['submit'])){
+  extract($_POST);
+  require_once("includes/db_config.php");
+
+  echo "INSERT INTO students VALUES (NULL, '$student_id', '$name', '$email', '$phone', '$address')";
+  $sql = "INSERT INTO students VALUES (NULL, '$student_id', '$name', '$email', '$phone', '$address')";
+  $db->query($sql);
+
+  if($db->affected_rows){
+    echo "Inserted";
+  }
+}
+?>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form id="quickForm">
+              <form id="quickForm" method="post">
                 <div class="card-body">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Student_id</label>
