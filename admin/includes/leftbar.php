@@ -70,6 +70,27 @@
               
             </ul>
           </li>
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon"></i>
+              <p>
+                Users
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="all_users.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All users</p>
+                </a>
+              </li>
+          
+              
+            </ul>
+          </li>
       
          
           
