@@ -9,6 +9,21 @@
 
 ?>
 
+<?php 
+if(isset($_POST['submit'])){
+  extract($_POST);
+  require_once("includes/db_config.php");
+
+  echo "INSERT INTO student VALUES (NUll, '$student_id', '$name', '$email', '$phone', '$address' ";
+  $sql = "INSERT INTO student VALUES (NUll, '$student_id', '$name', '$email', '$phone', '$address' ";
+  $db->query($sql);
+
+  if($db->affected_rows){
+    echo "Inserted";
+  }
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -103,7 +118,7 @@
                  
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                 </div>
               </form>
             </div>
